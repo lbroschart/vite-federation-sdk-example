@@ -20,6 +20,8 @@ The missing Context Providers are configured by using the SDK Wrapper:
 * LocalizationProvider (used by MUI DatePicker)
 * ThemeProvider (used by every MUI Component)
 
+Discussion: https://github.com/module-federation/vite/issues/97
+
 ## Start and Reproduce
 
 install dependencies
