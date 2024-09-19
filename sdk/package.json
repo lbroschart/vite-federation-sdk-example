@@ -1,0 +1,48 @@
+{
+  "name": "example-sdk",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5005 --strictPort",
+    "prebuild": "npx rimraf dist",
+    "build": "tsc --project tsconfig.build.json && vite build"
+  },
+  "files": [ "dist" ],
+  "main": "dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./components": {
+      "types": "./dist/components/index.d.ts",
+      "import": "./dist/components/index.js",
+      "require": "./dist/components/index.cjs"
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "dependencies": {
+    "@emotion/styled": "^11.13.0",
+    "@emotion/react": "^11.13.3",
+    "@mui/material": "^5.15.19",
+    "@mui/x-date-pickers-pro": "^7.17.0",
+    "luxon": "^3.5.0"
+  },
+  "devDependencies": {
+    "@types/luxon": "^3.4.2",
+    "@types/node": "^22.5.5",
+    "@types/react": "^18.3.7",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.6.2",
+    "vite": "^5.4.6",
+    "rollup-plugin-multi-input": "^1.5.0"
+  }
+}

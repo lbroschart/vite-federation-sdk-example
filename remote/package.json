@@ -1,0 +1,23 @@
+{
+  "name": "example-remote",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --port 5001 --strictPort",
+    "build": "vite build --base http://localhost:5001",
+    "preview": "vite preview --port 5001 --strictPort"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "example-sdk": "workspace:^"
+  },
+  "devDependencies": {
+    "@module-federation/vite": "1.0.0-alpha-0b760f6",
+    "@types/node": "^20.12.12",
+    "@types/react": "^18.2.66",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "noEmit": false,
+  "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "dist"
+  },
+  "files": [
+    "src/lib/index.ts"
+  ],
+  "exclude": [
+    "src/main.tsx"
+  ]
+}

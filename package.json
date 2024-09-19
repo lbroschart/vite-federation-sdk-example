@@ -1,0 +1,10 @@
+{
+  "name": "mui-federation-sdk-example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "clean-node-modules": "npx rimraf --glob ./**/node_modules && npx rimraf --glob ./node_modules && npx rimraf --glob ./**/*-lock.* && npx rimraf --glob ./*-lock.*",
+    "build-sdk": "pnpm --filter \"./sdk\" build",
+    "dev-all": "pnpm --parallel dev"
+  }
+}
