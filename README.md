@@ -40,4 +40,4 @@ now open:
 * http://localhost:5001 for remote app
 
 To switch between 'app' and 'app-broken' component inside the host change:
-`host/src/remote.tsx` -> toggle between `remote/app-broken` and `remote/app` in line 8.
+`host/src/remote.tsx` -> toggle between `remote/app-broken` and `remote/app` in line 9.

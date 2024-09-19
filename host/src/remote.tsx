@@ -5,6 +5,7 @@ import { loadRemote } from '@module-federation/runtime'
 const Remote = () => {
   const Lazy = lazy(() => new Promise<{ default: ComponentType<{}> }>(async (resolve, reject) => {
     try {
+      // available exposures: 'remote/app' and 'remote/app-broken'
       const app = await loadRemote<{ default: ComponentType<{}> }>(`remote/app-broken`)
 
       if (app) {
