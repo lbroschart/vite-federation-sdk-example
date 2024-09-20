@@ -18,6 +18,9 @@ export default defineConfig({
         },
         'example-sdk': {
           singleton: true
+        },
+        'example-sdk/': {
+          singleton: true
         }
       }
     })

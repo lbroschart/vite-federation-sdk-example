@@ -10,8 +10,7 @@ export default defineConfig({
     federation({
       name: 'remote',
       exposes: {
-        './app': './src/app.tsx',
-        './app-broken': './src/app-broken.tsx',
+        './app': './src/app.tsx'
       },
       filename: 'remoteEntry.js',
       shared: {
@@ -22,6 +21,9 @@ export default defineConfig({
           singleton: true
         },
         'example-sdk': {
+          singleton: true
+        },
+        'example-sdk/': {
           singleton: true
         }
       }

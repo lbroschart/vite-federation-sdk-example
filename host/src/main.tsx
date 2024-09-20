@@ -15,6 +15,10 @@ init({
   }]
 })
 
+// https://github.com/module-federation/vite/issues/97#issuecomment-2361601280
+import('example-sdk')
+import('example-sdk/components')
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <SDKWrapper>

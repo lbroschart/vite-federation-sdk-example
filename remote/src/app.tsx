@@ -1,4 +1,4 @@
-import { Button, CustomDatePicker } from 'example-sdk'
+import { Button, CustomDatePicker } from 'example-sdk/components'
 
 const App = () => {
   return (
